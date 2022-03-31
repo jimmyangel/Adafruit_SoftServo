@@ -54,7 +54,7 @@ void Adafruit_SoftServo::write(uint8_t a) {
 
   if (!isAttached)
     return;
-  micros = map(a, 0, 180, 1000, 2000);
+  micros = map(a, 0, 180, 500, 2500);
 }
 /**
  * @brief Pulse the control pin for the amount of time determined when the angle
